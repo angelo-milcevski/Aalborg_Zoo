@@ -1,0 +1,85 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    color: white;
+
+}
+
+
+nav{
+    background-color: green;
+    width: 100%;
+    height: 50px;
+}
+
+.section_image{
+    background-color: red;
+    width: 100%;
+    height: 350px;
+}
+
+.invitation{
+    background-color: skyblue;
+    width: 100%;
+    height: 250px;
+}
+.events{
+    background-color: orange;
+    width: 100%;
+    height: 250px;
+}
+.projects{
+    background-color: pink;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.donate{
+    background-color: red;
+    width: 100%;
+    height: 250px;
+}
+
+footer{
+    background-color: green;
+    width: 100%;
+  }
+
+
+
+    /* Responsive */
+
+@media only screen and (max-width:599px) {
+  /* For mobile phones: */
+
+  footer{
+      height: 50px;
+
+  }
+
+}
+
+
+@media only screen and (min-width: 600px) and (max-width:768px) {
+    /* For tablets: */
+    .events , .projects{
+      width: 50%;
+      float: left;
+    }
+
+    .donate{
+      width: 100%;
+      height: 450px;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+
+
+}
