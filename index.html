@@ -6,10 +6,13 @@
 <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 <link rel="stylesheet" href="assets/css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
 <title>Aalborg Zoo</title>
 </head>
 
 <body>
+    
 <header>
   <nav>
     <ul>
@@ -44,7 +47,27 @@
   <section class="donate" id="donate">
     <p>HELP US MAKE A CHANGE</p>
     <img class="donation_img" src="assets/images/donation.png" alt="Donation"><br>
-    <button class="button">DONATE</button>
+      
+ <script> 
+     $(function() {
+  var b = $("#donation_button");
+  var w = $("#wrapper");
+  b.click(function() {
+    w.toggleClass('open'); /* <-- toggle the application of the open class on click */
+    });
+     });
+      </script>
+      
+  <button class="button" id="donation_button">DONATE</button>
+<div id="wrapper">
+ <form>
+  Full name:
+  <input type="text" name="name" placeholder="Full Name"><br>
+  Donation:
+  <input type="number" name="donation" placeholder="Donation">
+</form>
+</div>
+      
   </section>
 </main>
 <footer>
