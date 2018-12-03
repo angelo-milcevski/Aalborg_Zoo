@@ -1,0 +1,488 @@
+html {
+	scroll-behavior: smooth;
+	font-family: 'Source Serif Pro', serif;
+}
+
+p {
+	font-family: 'Quicksand', sans-serif;
+}
+
+body {
+	margin: 50px 0 0 0;
+	color: white;
+}
+
+nav {
+	background-color: white;
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+li {
+	display: inline-block;
+	width: 100px;
+	align-content: center;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+li a {
+	display: block;
+	text-align: center;
+	font-size: 15px;
+	padding: 0px 10px;
+	text-decoration: none;
+	color: #ebc48d;
+}
+
+li a:hover {
+	text-decoration: underline;
+}
+
+.banner {
+	width: 100%;
+	text-align: center;
+	overflow: hidden;
+}
+
+.banner-image {
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, 0);
+	z-index: -1;
+	max-height: 350px;
+}
+
+.story {
+	background-color: skyblue;
+	width: 80%;
+	height: 120px;
+	padding: 5% 10%;
+	overflow: hidden;
+}
+
+.events {
+	background-color: orange;
+	width: 80%;
+	height: 250px;
+	padding: 5% 10%;
+}
+
+.grid-container {
+	display: grid;
+	margin: auto;
+	width: 100%;
+	grid-gap: 5px;
+	grid-template-columns: 100%;
+	grid-template-areas: 'image1' 'text1' 'image2' 'text2' 'image3' 'text3'
+}
+
+.projects_head {
+	color: #ebc48d;
+	text-align: center;
+	margin: 10px;
+	font-size: 20px;
+}
+
+.project_images {
+	overflow: hidden;
+	max-width: 100%;
+	margin: auto;
+	text-align: center;
+}
+
+.project_text {
+	max-width: 100%;
+	background-color: #F7E7D2;
+	color: black;
+	text-align: center;
+	padding: 0 10px;
+	font-size: 14px;
+}
+
+.black_mamba_img {
+	grid-area: image1;
+}
+
+.black_mamba_text {
+	grid-area: text1;
+	height: 180px;
+	overflow: hidden;
+}
+
+.rainforest_img {
+	grid-area: image2;
+}
+
+.rainforest_text {
+	grid-area: text2;
+	height: 160px;
+	overflow: hidden;
+}
+
+.elephant_img {
+	grid-area: image3;
+}
+
+.elephant_text {
+	grid-area: text3;
+	height: 160px;
+	overflow: hidden;
+}
+
+.donate {
+	color: #ebc48d;
+	font-size: 24px;
+	width: 100%;
+	text-align: center;
+	padding: 30px 0;
+}
+
+.donation_img {
+	width: 100px;
+	margin-bottom: 8%;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+	padding: 10px 10px;
+	font-family: 'Source Serif Pro', serif;
+	font-size: 20px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	color: white;
+	background-color: #ebc48d;
+	border: none;
+	border-radius: 90px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+	top: -110px;
+	left: -70px;
+	color: #ebc48d;
+    background-color: #f9f9f9;
+    min-width: 200px;
+	min-height: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+	border-radius: 15px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#Donation-note{
+	height: 30px;
+	width: 200px;
+}
+
+#donationsubmission{
+	width: 30px;
+}
+
+footer {
+	background-color: black;
+	color: white;
+	width: 100%;
+	margin-top: 8%;
+	height: 25px;
+}
+
+.footerdiv1{
+	float: left;
+}
+
+.footerdiv2{
+	float: right;
+}
+
+      /* Responsive */
+
+@media only screen and (min-width: 600px) {
+		
+		.events, .story {
+			width: 80%;
+			float: left;
+		}
+		
+		.story{
+			height: 75px;
+		}
+	
+		li {
+			width: 150px;
+		}
+	
+		li a {
+			font-size: 20px;
+			padding: 0px 25px;
+		}
+	
+		.grid-container {
+			display: grid;
+			margin: auto;
+			grid-gap: 10px;
+			width: 100%;
+			grid-template-columns: 50%;
+			grid-template-areas: 'image1 text1' 'text2 image2' 'image3 text3'
+		}
+	
+		.projects_head {
+			margin: 15px;
+			font-size: 20px;
+		}
+	
+		.project_images {
+			overflow: hidden;
+			max-width: 100%;
+			
+		}
+	
+		.project_text {
+			padding: 0 10px;
+			font-size: 13px;
+			height: 300px;
+		}
+	
+		.donate {
+			font-size: 30px;
+		}
+	
+		.donation_img {
+			width: 150px;
+			margin-bottom: 6%;
+		}
+	
+		.button {
+			padding: 10px 15px;
+			font-size: 30px;
+		}
+		}
+
+ @media only screen and (min-width: 700px) {
+		 
+	 	main {
+		 margin: 0 0 0 0;
+		}
+	 
+		 li {
+		 width:200px;
+		}
+	 
+		li a {
+		 font-size: 25px;
+		 padding: 0px 40px;
+		 margin: 5px 0;
+		}
+	 
+		nav {
+		 height: 70px;
+		}
+	 
+		 .banner-image {
+		 max-height: 400px;
+		 margin-top: 15px;
+		}
+	 
+		 .projects_head {
+		 margin: 20px;
+		 font-size: 25px;
+		}
+	 
+		 .donate {
+		 font-size: 35px;
+		}
+	 
+		.project_text {
+		 padding: 0 12px;
+		 font-size: 15px;
+		 height: 360px;
+		}
+	 
+		.donation_img {
+		 width: 180px;
+		 margin-bottom: 6%;
+		}
+	 
+		 .button {
+		 padding: 10px 15px;
+		 font-size: 35px;
+		}
+		}
+	
+@media only screen and (min-width: 850px) {
+		
+		main {
+		 margin: 0 5% 0 5%;
+		}
+	
+		 li a {
+		 font-size: 28px;
+		}
+	
+		nav {
+		 height: 70px;
+		}
+		
+		.story{
+		height: 50px;
+		}
+	
+		 .banner-image {
+		 max-height: 450px;
+		 margin-top: 20px;
+		}
+	
+		 .grid-container {
+		 grid-gap: 15px;
+		}
+	
+		 .projects_head {
+		 margin: 25px;
+		 font-size: 30px;
+		}
+	
+		 .project_text {
+		 font-size: 18px;
+		 height: 385px;
+		}
+	
+		.donation_img {
+		 width: 230px;
+		}
+	
+		 .donate {
+		 font-size: 60px;
+		}
+	
+		 .button {
+		 padding: 15px 20px;
+		 font-size: 40px;
+		}
+		}
+	
+	 @media only screen and (min-width: 1150px) {
+				 
+		 main {
+		 margin: 0 10% 0 10%;
+		}
+		 
+		 li a {
+		 font-size: 30px;
+		}
+		 
+		nav {
+		 height: 80px;
+		}
+		 
+		 .story{
+			 height: 40px;
+		 }
+		 
+		 .banner-image {
+		 max-height: 500px;
+		 margin-top: 30px;
+		}
+		 
+		 .grid-container {
+		 grid-gap: 20px;
+		}
+		 
+		 .projects_head {
+		 font-size: 35px;
+		}
+		 
+		 .project_images {
+		 width: 100%;
+		}
+		 
+		.project_text {
+		 font-size: 20px;
+		 height: 540px;
+		}
+		 
+		.donation_img {
+		 width: 250px;
+		}
+		 
+		 .donate {
+		 font-size: 65px;
+		 padding-top: 70px;
+		}
+		 
+		 .button {
+		 padding: 15px 20px;
+		 font-size: 45px;
+		}
+		}
+	
+ @media only screen and (min-width: 1400px) {
+		 
+	 	main {
+		 margin: 0 10% 0 10%;
+		}
+	 
+		 li a {
+		 font-size: 30px;
+		}
+	 
+		nav {
+		 height: 80px;
+		}
+	 	
+		 .story{
+		 height: 30px;
+		 }
+	 	
+		 .banner-image {
+		 max-height: 900px;
+		 margin-top: 30px;
+		}
+	 
+		 .grid-container {
+		 grid-gap: 20px;
+		}
+	 
+		 .projects_head {
+		 font-size: 35px;
+		}
+	 
+		 .project_images {
+		 width: 100%;
+		}
+	 
+		.project_text {
+		 font-size: 24px;
+		 height: 580px;
+		}
+	 
+		.donation_img {
+		 width: 250px;
+		}
+	 
+		 .donate {
+		 font-size: 65px;
+		 padding-top: 70px;
+		}
+	 
+		 .button {
+		 padding: 15px 20px;
+		 font-size: 45px;
+		}
+		}
