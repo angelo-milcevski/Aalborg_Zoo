@@ -1,6 +1,7 @@
 html {
 	scroll-behavior: smooth;
 	font-family: 'Source Serif Pro', serif;
+	cursor: default;
 }
 
 p {
@@ -162,11 +163,28 @@ li a:hover {
 }
 label {
 	display: block;
+	cursor: pointer;
 }
-
+/* donate dropdown*/
 #btn_donate:checked + form {
     display: block;
 
+}
+/* Find out more dropdowns*/
+#btn_dropdown1:checked + form {
+	display: block;
+}
+
+#btn_dropdown2:checked + form {
+	display: block;
+}
+
+#btn_dropdown3:checked + form {
+	display: block;
+}
+
+#btn_dropdown4:checked + form {
+	display: block;
 }
 .checkmark {
 	display: none;
@@ -184,9 +202,8 @@ label {
 	border: none;
 	border-radius: 20px;
 }
-
-
-.dropdown-content {
+/* Article dropdowns*/
+.dropdown-content1 , .dropdown-content2 , .dropdown-content3 , .dropdown-content4{
     display: none;
 	color: black;
     background-color: white;
@@ -199,8 +216,23 @@ label {
 	border-radius: 15px;
 	margin: auto;
 	text-align: left;
-	
 }
+/* Donate dropdown */
+.dropdown-content{
+    display: none;
+	color: black;
+    background-color: white;
+	font-size: 1.2rem;
+    min-width: 200px;
+	min-height: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+	z-index: -1;
+	border-radius: 15px;
+	margin: auto;
+	text-align: left;
+}
+
 input,select{
 	width: 100%;
 	padding: 10px 0;
