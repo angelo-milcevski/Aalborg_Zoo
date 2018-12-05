@@ -87,7 +87,9 @@ li a:hover {
 	color: black;
 	background-color: #F7E7D2;
 }
-
+.story{
+	background-color: white;
+}
 
 .grid-container {
 	display: grid;
@@ -102,7 +104,7 @@ li a:hover {
 	color: #ebc48d;
 	text-align: center;
 	margin: 10px;
-	font-size: 20px;
+	font-size: 2rem;
 }
 
 .project_images {
@@ -111,6 +113,9 @@ li a:hover {
 	margin: auto;
 	text-align: center;
 }
+ .anniversary {
+		 font-size: 1.5rem;
+		}
 
 .project_text {
 	max-width: 100%;
@@ -189,7 +194,7 @@ label {
 .checkmark {
 	display: none;
 }
-
+/*for the donate button*/
 .dropdown {
     position: relative;
     display: inline-block;
@@ -200,14 +205,27 @@ label {
 	color: white;
 	background-color: #ebc48d;
 	border: none;
-	border-radius: 20px;
+	border-radius: 15px;
 }
+/*for the read more buttons*/
+.read_more{
+  position: relative;
+    display: inline-block;
+	padding: 5px 10px;
+	cursor: pointer;
+	text-decoration: none;
+	outline: none;
+	color: white;
+	background-color: #EED0A4;
+	border: none;
+	border-radius: 10px;
+	}
 /* Article dropdowns*/
-.dropdown-content1 , .dropdown-content2 , .dropdown-content3 , .dropdown-content4{
+.dropdown-project-text{
     display: none;
 	color: black;
-    background-color: white;
-	font-size: 1.2rem;
+	background-color: #F7E7D2;
+	font-size: 1rem;
     min-width: 200px;
 	min-height: 200px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -231,6 +249,10 @@ label {
 	border-radius: 15px;
 	margin: auto;
 	text-align: left;
+	column-count: 1;
+}
+.visible_text{
+	display: none;
 }
 
 input,select{
@@ -243,9 +265,9 @@ input,select{
 	cursor: pointer;
 	
 }
-.sumbit{
+.submit{
 	border-style: none;
-	margin: 15px auto;
+	margin: 40px auto 0 auto;
 	display: block;
 	padding: 5px 10px;
 	background-color:#ebc48d;
@@ -328,6 +350,13 @@ footer {
 			padding: 0 10px;
 			font-size: 13px;
 		}
+	.visible_text{
+	display: block;
+		
+}
+	.read_more{
+		display: none;
+	}
 	
 		.donate {
 			font-size: 30px;
@@ -393,6 +422,7 @@ footer {
 		 padding: 10px 15px;
 		 font-size: 35px;
 		}
+
 		}
 	
 @media only screen and (min-width: 850px) {
@@ -441,7 +471,12 @@ footer {
 		 padding: 15px 20px;
 		 font-size: 40px;
 		}
+		.dropdown-content{
+		column-count: 2;
+			column-gap: 100px;
+	}
 		}
+
 	
 	 @media only screen and (min-width: 1150px) {
 				 
@@ -467,7 +502,10 @@ footer {
 		}
 		 
 		 .projects_head {
-		 font-size: 35px;
+		 font-size: 3rem;
+		}
+		  .anniversary {
+		 font-size: 1rem;
 		}
 		 
 		 .project_images {
@@ -491,8 +529,9 @@ footer {
 		 padding: 15px 20px;
 		 font-size: 45px;
 		}
-		}
+		
 	
+	}
  @media only screen and (min-width: 1400px) {
 		 
 	 	main {
@@ -541,4 +580,16 @@ footer {
 		 padding: 15px 20px;
 		 font-size: 45px;
 		}
+	 .dropdown-content{
+		column-count: 4;
+		column-gap: 100px;
+		padding-top: 40px;
+		
+	}
+		 .dropdown-content>label{
+			 margin-top: 20px;
+		 }
+		 .submit{
+			 margin: 60px auto 0 auto;
+		 }
 		}
