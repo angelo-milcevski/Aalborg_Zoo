@@ -130,7 +130,6 @@ li a:hover {
 
 .black_mamba_text {
 	grid-area: text1;
-	height: 180px;
 }
 
 .rainforest_img {
@@ -139,8 +138,6 @@ li a:hover {
 
 .rainforest_text {
 	grid-area: text2;
-	height: 160px;
-	overflow: hidden;
 }
 
 .elephant_img {
@@ -149,8 +146,6 @@ li a:hover {
 
 .elephant_text {
 	grid-area: text3;
-	height: 160px;
-	overflow: hidden;
 }
 
 .donate {
@@ -265,7 +260,7 @@ footer {
 	
     
     .text{
-        display: contents;
+        display: block;
     }
     
 		li {
@@ -300,7 +295,6 @@ footer {
 		.project_text {
 			padding: 0 10px;
 			font-size: 13px;
-			height: 300px;
 		}
 	
 		.donate {
@@ -355,7 +349,6 @@ footer {
 		.project_text {
 		 padding: 0 12px;
 		 font-size: 15px;
-		 height: 360px;
          text-overflow: ellipsis;
 		}
 	 
@@ -400,7 +393,6 @@ footer {
 	
 		 .project_text {
 		 font-size: 18px;
-		 height: 385px;
              
 		}
     
@@ -452,7 +444,6 @@ footer {
 		 
 		.project_text {
 		 font-size: 20px;
-		 height: 540px;
 		}
 		 
 		.donation_img {
@@ -503,7 +494,6 @@ footer {
 	 
 		.project_text {
 		 font-size: 20px;
-		 height: 580px;
 		}
 	 
 		.donation_img {
