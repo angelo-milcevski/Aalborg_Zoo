@@ -86,6 +86,7 @@ li a:hover {
 	padding: 10px;
 	color: black;
 	background-color: #F7E7D2;
+	font-size: 1rem;
 }
 .story{
 	background-color: white;
@@ -283,17 +284,20 @@ footer {
 	color: white;
 	width: 100%;
 	margin-top: 8%;
-	padding: 15px 0;
+	column-count: 2;
 	text-align: center;
+	
+}
+.copyright, .social_icons{
+	margin: 5% 3% 5% 0;
+}
+	.copyright{
+	margin-top: 9%;
+}
+.social_icons:hover{
+	opacity: 0.7;
 }
 
-.footerdiv1{
-	float: left;
-}
-
-.footerdiv2{
-	float: right;
-}
 
       /* Responsive */
 
@@ -305,7 +309,11 @@ footer {
         grid-gap: 10px;
         width: 100%;
         grid-template-columns: 50%;
-        grid-template-areas: 'story events'
+        grid-template-areas: 'story events';
+		border: solid;
+		border-color: #F7E7D2;
+		border-width: 7px;
+		
             
         }
     .find_out{
@@ -371,8 +379,11 @@ footer {
 			padding: 10px 15px;
 			font-size: 30px;
 		}
-		}
-
+		
+	.copyright{
+		margin-top: 6%;
+	}
+	}
  @media only screen and (min-width: 700px) {
 		 
 	 	main {
@@ -454,9 +465,12 @@ footer {
 		}
 	
 		 .project_text {
-		 font-size: 18px;
+		 font-size: 1rem;
              
 		}
+	.story, .events {
+		font-size: 1.09rem;
+	}
     
 	
 		.donation_img {
@@ -505,7 +519,7 @@ footer {
 		 font-size: 3rem;
 		}
 		  .anniversary {
-		 font-size: 1rem;
+		 font-size: 2rem;
 		}
 		 
 		 .project_images {
@@ -513,8 +527,11 @@ footer {
 		}
 		 
 		.project_text {
-		 font-size: 20px;
+		 font-size: 1.28rem;
 		}
+		 .story, .events {
+			 font-size: 1.3rem;
+		 }
 		 
 		.donation_img {
 		 width: 250px;
@@ -564,7 +581,7 @@ footer {
 		}
 	 
 		.project_text {
-		 font-size: 20px;
+		 font-size: 1.3rem;
 		}
 	 
 		.donation_img {
